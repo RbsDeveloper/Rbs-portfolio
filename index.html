@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--JAVASCRIPT LINK-->
+    <script defer src="script.js"></script>
+    <!--FONT AWESOME CDN-->
+    <script
+      src="https://kit.fontawesome.com/953cd5648e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--GOOGLE FONTS LINK-->
+  </head>
+  <body>
+    <header class="flex primary-header">
+      <!--LOGO-->
+    
+      <div class="logo-container"><img src="./images/Rbs (2).svg" alt=""></div>
+      <button  class="mobile-nav-toggle" aria-expanded="false"><i class="fa-solid fa-bars" id="menu-icon"></i></button>
+      <nav class="nav">  <!--navigation list-->
+          <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+
+            <li class="nav-item"><a href="#home" class="nav-link"><span aria-hidden="true">00</span>Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link"><span aria-hidden="true">01</span>About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link"><span aria-hidden="true">02</span>Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link"><span aria-hidden="true">03</span>Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#talk" class="nav-link"><span aria-hidden="true">04</span>Let's talk</a>
+            </li>
+
+          </ul>    
+      </nav>
+      <!--color theme btn-->
+     <!-- <button class="palette"><i class="fa-solid fa-file"></i></button>-->
+    
+    </header>
+    <main class="main-content">
+      <section class="home" id="home">
+        <!--INTRO-->
+        <div class="left-side-intro-container">
+          <div class="hero">
+            <h1 class="hero-text">
+              Hello world, <br />
+              I'm Raul, <br />
+              Web Developer.
+            </h1>
+            <button class="btn resume">
+              <a href="./files/CV_Raul_Bazavan_ro.pdf" download=""><i class="fa-solid fa-file"></i
+                ><span class="resumee-btn-text">Resumee</span></a>
+            </button>
+          </div>
+        </div>
+
+        <!--SOCIAL ICONS -->
+        <div class="right-side-social-container">
+          
+          <!--IMAGE-->
+        
+        <div class="social-img-container">
+          <img id='imgChange' src="/images/Design fără titlu.png" alt="" onmouseover="hover(this);" onmouseout="hoverOut(this)">
+          <h3></h3>
+        </div>
+
+        <div class="social-list">
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/raul-bazavan-1a1a6125a/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/RbsDeveloper"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      
+      </section>
+
+      <section class="about" id="about">
+        <div class="description-wrapper-container">
+          <div class="profile-photo">
+            <img
+              src="./images/WhatsApp Image 2023-05-25 at 10.46.22.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="my-description">
+            <p class="about-text">
+              I'm a self-taught front end developer based in Romania who
+              discovered his passion for coding a few months ago and since then
+              i've spent every single free moment i had to read, learn and
+              improve myself in this field.
+            </p>
+            <p class="about-text">
+              <span class="lol">&ltLOL&gt</span>
+              As a matter of fact, about my free time, i have to mention i
+              didn't had too much
+              <span class="lol">&lt/LOL&gt</span>
+            </p>
+
+            <p class="about-text">
+              I'm an ambitious person with a great desire to grow, well
+              organized and a lover of challenges.
+              <br />
+              <span class="and">&</span>
+              When i'm not that guy, i love spending my time gaming, going in
+              nature trips and doing interactivs activities.
+            </p>
+          </div>
+        </div>
+
+        <div class="tech-row-container">
+          <div class="tech-logos" id="skills">
+            <h2 class="tech-logos-title">Tech Stack</h2>
+            <ul class="tech-list">
+              <li class="tech-item-list">
+                <a href=""><i class="fa-brands fa-square-js"></i></a>
+              </li>
+              <li class="tech-item-list">
+                <a href=""><i class="fa-brands fa-css3-alt"></i></a>
+              </li>
+              <li class="tech-item-list">
+                <a href=""><i class="fa-brands fa-html5"></i></a>
+              </li>
+              <li class="tech-item-list">
+                <a href=""><i class="fa-brands fa-react"></i></a>
+              </li>
+              <li class="tech-item-list">
+                <a href=""><i class="fa-brands fa-bootstrap"></i></a>
+              </li>
+              <li class="tech-item-list">
+                <a href=""><i class="fa-brands fa-square-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+     
+    <section class="projects" id="projects">
+        
+      <h2 class="projects-title">Portfolio</h2>
+      <div class="portfolio-container">
+        <!--filtering buttons for the projects-->
+        <div class="portfolio-filter">
+          <button type="button" class="btn btn-filter active" data-filter="all">Everything</button>
+          <button type="button" class="btn btn-filter" data-filter="sites">Web Sites</button>
+          <button type="button" class="btn btn-filter" data-filter="components">Components</button>
+        </div>
+        <!--Project cards-->
+        <div class="projects-container">
+          <div class="project-card" data-category="components">
+            <div class="left-side-card">
+              <div class="card-title-container">
+                <h3 class="project-card-title">Rating component</h3>
+              </div>
+
+              <div class="project-img-container">
+                <img
+                  class="project-image"
+                  src="./images/Screenshot 2023-06-01 005918.png"
+                  alt="Project One Image"
+                />
+              </div>
+            </div>
+            <div class="right-side-card">
+              <div class="text-container">
+                <p class="subtext">
+                  This is a small project to practice handling user interactions and updating the DOM.
+                </p>
+                <p class="tech-used">#HTML #Javascript #CSS</p>
+              </div>
+
+              <div class="btns-container">
+                <button class="project-btn">
+                  <a
+                    class="project-link"
+                    href="https://www.github.com/kubowania"
+                    >Visit Site</a
+                  >
+                </button>
+                <button class="project-btn">
+                  <a
+                    class="project-link"
+                    href="https://www.github.com/kubowania"
+                    >Github</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="components">
+            <div class="left-side-card">
+              <div class="card-title-container">
+                <h3 class="project-card-title">Contact form</h3>
+              </div>
+
+              <div class="project-img-container">
+                <img
+                  class="project-image"
+                  src="./images/Screenshot 2023-06-01 010021.png"
+                  alt="Project One Image"
+                />
+              </div>
+            </div>
+            <div class="right-side-card">
+              <div class="text-container">
+                <p class="subtext">
+                  This is a small project about a complete sign-up form  with client-side validation using JavaScript.
+                </p>
+                <p class="tech-used">#HTML #Javascript #CSS</p>
+              </div>
+
+              <div class="btns-container">
+                <button class="project-btn">
+                  <a
+                    class="project-link"
+                    href="https://www.github.com/kubowania"
+                    >Visit Site</a
+                  >
+                </button>
+                <button class="project-btn">
+                  <a
+                    class="project-link"
+                    href="https://www.github.com/kubowania"
+                    >Github</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="sites">
+            <div class="left-side-card">
+              <div class="card-title-container">
+                <h3 class="project-card-title">It School CLONE</h3>
+              </div>
+
+              <div class="project-img-container">
+                <img
+                  class="project-image"
+                  src="./images/it-school-clone.png"
+                  alt="Project One Image"
+                />
+              </div>
+            </div>
+            <div class="right-side-card">
+              <div class="text-container">
+                <p class="subtext">
+                  This is a project i've done during a course and the main idea of this project was to recreate the old site of the academy as closest as possible
+                </p>
+                <p class="tech-used">#Bootstrap  #CSS</p>
+              </div>
+
+              <div class="btns-container">
+                <button class="project-btn">
+                  <a
+                    class="project-link"
+                    href="https://www.github.com/kubowania"
+                    >Visit Site</a
+                  >
+                </button>
+                <button class="project-btn">
+                  <a
+                    class="project-link"
+                    href="https://www.github.com/kubowania"
+                    >Github</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="sites">
+            <div class="left-side-card">
+              <div class="card-title-container">
+                <h3 class="project-card-title">Jake&Elwood</h3>
+              </div>
+
+              <div class="project-img-container">
+                <img
+                  class="project-image"
+                  src="./images/elwood.png"
+                  alt="Project One Image"
+                />
+              </div>
+            </div>
+            <div class="right-side-card">
+              <div class="text-container">
+                <p class="subtext">
+                  A website composed of 4 pages made to practice CSS Grid
+                  and media queries in order to make it responsive
+                </p>
+                <p class="tech-used">#React #Javascript #CSS</p>
+              </div>
+
+              <div class="btns-container">
+                <button class="project-btn">
+                  <a
+                    class="project-link"
+                    href="https://www.github.com/kubowania"
+                    >Visit Site</a
+                  >
+                </button>
+                <button class="project-btn">
+                  <a
+                    class="project-link"
+                    href="https://www.github.com/kubowania"
+                    >Github</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <section class="talk" id="talk">
+        <h2 class="talk-title">Have a project in mind? <br> Or an Idea?</h2>
+        <div class="contact-form">
+          <div class="form-container">
+            <h3 class="subtitle-form">Get in touch with me online</h3>
+            <div class="talk-social">
+              <a href="#" class="talk-social-item"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+
+              <a href="#" class="talk-social-item"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+
+              <a href="https://www.linkedin.com/in/raul-bazavan-1a1a6125a/" class="talk-social-item"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a href="https://github.com/RbsDeveloper" class="talk-social-item"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+
+              <a href="#" class="talk-social-item"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+
+            <h3 class="subtitle-form">Or just drop me a line</h3>
+            <form id="form" action="https://formsubmit.co/153093216e3325b7f2d12c9fb3c9e8b1" method="POST">
+              <input id="name" name="name" type="text" placeholder="Name" />
+
+              <input id="email" name="email" type="email" placeholder="Email" />
+
+              <textarea
+                id="message"
+                name="message"
+                cols="40"
+                rows="5"
+                placeholder="Tell me..."
+              ></textarea>
+
+              <button class="btn submit-btn" type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="location-map" id="map"></div>
+      </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-main">
+        <p class="footer-fineprint">© RBS Dev 2023</p>
+      </div>
+    </footer>
+    
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+      ({key: "AIzaSyCSLolty468JT5Y--U1TeHNqmqOrHviNrE", v: "beta"});</script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
